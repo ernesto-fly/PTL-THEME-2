@@ -28,9 +28,13 @@
   --font: 'Roboto Mono', 'Courier New', monospace;
 }
 
-/* ── Body: JetBrains Mono everywhere except headers ── */
-body { background: var(--bg); color: var(--fg); font-family: 'JetBrains Mono', 'Roboto Mono', 'Courier New', monospace; }
+/* ── Body: Inter everywhere except the dark ticker/board components ── */
+body { background: var(--bg); color: var(--fg); font-family: 'Inter', system-ui, sans-serif; }
 body:before { background: var(--emerald); }
+
+/* ── Green hover + extra-bold on all clickable links ── */
+a { transition: color 0.15s ease; font-weight: 800; }
+a:hover { color: var(--emerald); }
 
 /* ── Candlestick scroll indicator (custom, replaces the native scrollbar) ── */
 html { scrollbar-width: none; }
@@ -85,6 +89,7 @@ h1, h2, h3, h4, h5, h6, .banner-title {
 .cd-num, .prizehero-amt, .rt-chg, .sp, .gnum,
 .hero-chart-tag, .hero-chart-axis-label {
   font-variant-numeric: tabular-nums;
+  font-family: 'JetBrains Mono', 'Roboto Mono', 'Courier New', monospace;
 }
 
 /* ── Headings ── */
@@ -96,8 +101,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--ink); text-transform: uppercase; }
   background: rgba(15,17,20,0.85) !important;
   border-bottom-color: var(--line) !important;
 }
-.nav { color: var(--muted); }
-.nav a:hover { color: var(--fg); }
+.nav { color: var(--ptlc); font-family: 'Inter', system-ui, sans-serif; font-weight: 700; }
+.nav a:hover { color: var(--emerald) !important; }
 .brand { color: var(--emerald) !important; }
 .nav-toggle { border-color: var(--line-strong); color: var(--fg); }
 @media (max-width: 900px) {
@@ -176,7 +181,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--ink); text-transform: uppercase; }
 }
 .banner-bg:after { background-image: linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px) !important; }
 .banner-title { color: var(--ink) !important; }
-.banner .lead, .banner-p { color: var(--fg) !important; }
+.banner .lead, .banner-p { color: var(--fg) !important; font-family: 'Inter', system-ui, sans-serif; }
 .banner-p strong { color: var(--ink) !important; }
 
 /* ── Cards / tracks / tiles ── */
@@ -517,7 +522,7 @@ padding-top:1rem; }
 .leg .idx { background: rgba(255,255,255,0.06) !important; border-color: var(--line) !important; }
 
 /* ── Footer ── */
-footer { background: var(--bg); }
+footer { background: var(--bg); font-family: 'Inter', system-ui, sans-serif; }
 .foot { border-top-color: var(--line) !important; }
 .foot-brand p { color: var(--muted) !important; }
 .foot-col a { color: var(--muted) !important; }
