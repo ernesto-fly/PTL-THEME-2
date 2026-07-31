@@ -20,7 +20,7 @@
   --l1:          #00C853;
   --l2:          #FF7A3D;
   --neg:         #FF7A3D;
-  --ptlc:        #3A3F47;
+  --ptlc:        #7DC4FF;
   --line:        #2A2D33;
   --line-strong: #3D4149;
   --green:       #123526;
@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--ink); text-transform: uppercase; }
   border-color: var(--c) !important;
   box-shadow: 0 16px 38px rgba(0,0,0,0.35) !important;
 }
-.path-card-bar { height: 6px; background: var(--c); box-shadow: 0 0 14px var(--c); flex-shrink: 0; }
+.path-card-bar { height: 6px; background: var(--c); box-shadow: 0 0 14px var(--c), 0 0 30px var(--c), 0 0 48px color-mix(in srgb, var(--c) 60%, transparent); flex-shrink: 0; }
 .path-card-body { padding: 30px 32px 34px; display: flex; flex-direction: column; flex: 1; gap: 18px; font-family: 'JetBrains Mono', 'Roboto Mono', 'Courier New', monospace; }
 .path-card-kind { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.16em; color: #7a7f88; }
 .path-card-title { margin: -6px 0 0; font-size: 1.9rem; color: var(--c); }
